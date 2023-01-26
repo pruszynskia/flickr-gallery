@@ -1,0 +1,1 @@
+export const imageUrl = (value: any) => `https://live.staticflickr.com/${value.server}/${value.id}_${value.secret}.jpg`
