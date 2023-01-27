@@ -45,7 +45,7 @@ const Gallery = () => {
   if (isLoading) return <Loading />;
 
   return (
-    <div>
+    <div className={styles.bodyContainer}>
       <div className={styles.inputContainer}>
         <form onSubmit={handleSearch}>
           <input
@@ -54,15 +54,21 @@ const Gallery = () => {
             placeholder="Search..."
             onChange={handleSearchInput}
           />
-          <button type="submit">Search</button>
+          <button className={styles.button} type="submit">
+            Search
+          </button>
         </form>
       </div>
       <div>
         <nav>
-          <button onClick={handlePrev}>prev</button>
-          <button onClick={handleNext}>next</button>
+          <button className={styles.button} onClick={handlePrev}>
+            prev
+          </button>
+          <button className={styles.button} onClick={handleNext}>
+            next
+          </button>
         </nav>
-        <p>Page number: {page}</p>
+        <p className={styles.pageNumber}>Page number: {page}</p>
       </div>
       <div className={styles.galleryContainer}>
         {data?.photos?.photo?.map((el: IPhoto) => (
