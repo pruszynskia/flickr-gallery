@@ -14,6 +14,19 @@ Flickr-Gallery
 
 Developed Gallery WebApp as a Primea frontend Assignment.
 
+cloud deployment:
+Option1: build static files + deployment (eg. to S3)
+Option2: migrate to SSR (eg. nextjs) + deployment (eg. EC2, EKS/ECS)
+
+production ready:
+- add monitoring / observability (production logging)
+- add unit tests (eg. jest)
+- add e2e tests (eg. cypress)
+- add CICD pipeline
+- different deployment environments (eg. DEV/PROD split)
+- structured commits (eg. commitizen)
+- add code quality tooling (eg. SonarQube)
+
 ## Technologies
 
 - React.js - ^18.2.0
