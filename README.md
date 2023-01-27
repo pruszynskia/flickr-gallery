@@ -15,8 +15,8 @@ Flickr-Gallery
 Developed Gallery WebApp as a Primea frontend Assignment.
 
 cloud deployment:
-Option1: build static files + deployment (eg. to S3)
-Option2: migrate to SSR (eg. nextjs) + deployment (eg. EC2, EKS/ECS)
+- Option1: build static files + deployment (eg. to S3)
+- Option2: migrate to SSR (eg. nextjs) + deployment (eg. EC2, EKS/ECS)
 
 production ready:
 - add monitoring / observability (production logging)
